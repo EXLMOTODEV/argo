@@ -1,7 +1,7 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 pacman --noconfirm -S --needed mingw-w64-x86_64-toolchain
-pacman --noconfirm -S --needed mingw-w64-x86_64-git
+pacman --noconfirm -S --needed git
 pacman --noconfirm -S --needed mingw-w64-x86_64-qt5-static
 pacman --noconfirm -S --needed mingw-w64-x86_64-miniupnpc
 pacman --noconfirm -S --needed mingw-w64-x86_64-qrencode
