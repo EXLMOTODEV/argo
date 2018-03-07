@@ -1,13 +1,13 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-toolchain
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-git
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-qt5-static
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-miniupnpc
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-qrencode
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-jasper
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-libevent
-pacman --noconfirm -S --needed mingw-w64-%MSYS2_ARCH%-curl
+pacman --noconfirm -S --needed mingw-w64-x86_64-toolchain
+pacman --noconfirm -S --needed mingw-w64-x86_64-git
+pacman --noconfirm -S --needed mingw-w64-x86_64-qt5-static
+pacman --noconfirm -S --needed mingw-w64-x86_64-miniupnpc
+pacman --noconfirm -S --needed mingw-w64-x86_64-qrencode
+pacman --noconfirm -S --needed mingw-w64-x86_64-jasper
+pacman --noconfirm -S --needed mingw-w64-x86_64-libevent
+pacman --noconfirm -S --needed mingw-w64-x86_64-curl
 wget http://esxi.z-lab.me:666/~exl_lab/software/msys2-packages.tar
 tar -xf msys2-packages.tar
 rm msys2-packages.tar
